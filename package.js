@@ -1,10 +1,9 @@
 Package.describe({
-  name: 'jykae:restivus',
+  name: 'ajkwak:restivus',
   summary: 'Create authenticated REST APIs in Meteor 0.9+ via HTTP/HTTPS. Setup CRUD endpoints for Collections.',
-  version: '0.8.12',
-  git: 'https://github.com/jykae/meteor-restivus.git'
+  version: '0.8.13',
+  git: 'https://github.com/alfredjkwak/meteor-restivus.git'
 });
-
 
 Package.onUse(function (api) {
   // Minimum Meteor version
@@ -14,7 +13,7 @@ Package.onUse(function (api) {
   api.use('check');
   api.use('coffeescript');
   api.use('underscore');
-  api.use('accounts-password@1.2.12');
+  api.use('accounts-password@1.3.3');
   api.use('simple:json-routes@2.1.0');
 
   api.addFiles('lib/auth.coffee', 'server');
@@ -26,12 +25,11 @@ Package.onUse(function (api) {
   api.export('Restivus', 'server');
 });
 
-
 Package.onTest(function (api) {
   // Meteor dependencies
   api.use('practicalmeteor:munit');
   api.use('test-helpers');
-  api.use('jykae:restivus');
+  api.use('ajkwak:restivus');
   api.use('http');
   api.use('coffeescript');
   api.use('underscore');
