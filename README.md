@@ -62,7 +62,7 @@ and is built on top of [Simple JSON Routes][json-routes] to provide:
 
 You can install Restivus using Meteor's package manager:
 ```bash
-> meteor add ajkwak:restivus
+> meteor add mrest:restivus
 ```
 
 ## Quick Start
@@ -1185,17 +1185,17 @@ curl -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ" http
 
 To update Restivus to the latest version:
 ```bash
-> meteor update ajkwak:restivus
+> meteor update mrest:restivus
 ```
 
 Or to update Restivus to a specific version:
 ```bash
-> meteor add ajkwak:restivus@=<version_number>
+> meteor add mrest:restivus@=<version_number>
 ```
 
 For example, to update restivus to v0.7.0:
 ```bash
-> meteor add ajkwak:restivus@=0.7.0
+> meteor add mrest:restivus@=0.7.0
 ```
 
 Please check the [change log][restivus-change-log] before updating, for more information about the
